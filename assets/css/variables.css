@@ -1,0 +1,40 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --MainCard: hsl(263, 55%, 52%);
+    --Card-2: hsl(217, 19%, 35%);
+    --Card-4: hsl(219, 29%, 14%);
+    --Card-3-and-5: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+
+    --Lightfont: hsl(0, 0%, 81%);
+    --Lightfont-op50: hsla(0, 0%, 81%, 0.5);
+    --Lightfont-op70: hsla(0, 0%, 81%, 0.7);
+
+    --Card-1-img-border: hsla(0, 0%, 81%, 0.5);
+    --Card-4-img-border: hsl(263, 55%, 52%);
+
+    --DarkFont: hsl(217, 19%, 35%);
+    --DarkFont-op50: hsla(217, 19%, 35%, 0.5);
+    --DarkFont-op70: hsla(217, 19%, 35%, 0.7);
+    --BackgroundColor: hsl(210, 46%, 95%);
+
+    /* Note for text colors: */
+
+    /* 1. "Verified Graduate" has the same color as the person's name with 50% opacity */
+    /* 2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --ParagraphSize: 1.3rem;
+
+    /* ### Font */
+
+    /* font-family: "Barlow Semi Condensed", sans-serif; */
+    /* - Weights: 500, 600 */
+}

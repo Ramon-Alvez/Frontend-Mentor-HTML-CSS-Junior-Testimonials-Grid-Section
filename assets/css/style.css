@@ -1,0 +1,137 @@
+html {
+    font-size: 62.5%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    background-color: var(--BackgroundColor);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* GRID CONFIG */
+.container{
+    display: grid;
+    max-width: 110rem;
+    grid-template-areas: 
+        "Main-Card Main-Card Card-2 Card-5"
+        "Card-3 Card-4 Card-4 Card-5"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    margin: 20px;
+}
+
+/* CARDS MAIN CONFIGS */
+.card {
+    border-radius: 1rem;
+    padding: 3rem;
+
+    font-size: var(--ParagraphSize);
+}
+.card .card-header {
+    display: flex;
+}
+.card .card-header img {
+    display: block;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+.card .card-header .profile-info .name {
+    font-size: var(--ParagraphSize);
+}
+.card .card-header .profile-info p {
+    font-size: 1.2rem;
+    color: var(--font-op50);
+}
+.card .title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .8rem 0;
+    position: relative;
+}
+
+.main-card .title,
+.card-2 .title,
+.card-4 .title {
+    color: #fff;
+}
+
+.main-card .card-header img {
+    border: 2px solid var(--Card-1-img-border);
+}
+.card-4 .card-header img {
+    border: 2px solid var(--Card-4-img-border);
+}
+
+/* SPECIFIC COLOR CONFIG */
+/* DARK COLOR CARDS */
+.main-card .card-header .profile-info .name,
+.card-2 .card-header .profile-info .name,
+.card-4 .card-header .profile-info .name{
+    color: var(--Lightfont);
+}
+.main-card .card-header .profile-info p,
+.card-2 .card-header .profile-info p,
+.card-4 .card-header .profile-info p {
+    color: var(--Lightfont-op50);
+}
+.main-card article p,
+.card-2 article p,
+.card-4  article p{
+    color: var(--Lightfont-op70);
+}
+
+/* LIGHT COLOR CARDS */
+.card-3 .card-header .profile-info .name,
+.card-5 .card-header .profile-info .name{
+    color: var(--Darkfont);
+}
+.card-3 .card-header .profile-info p,
+.card-5 .card-header .profile-info p {
+    color: var(--Darkfont-op50);
+}
+.card-3 article p,
+.card-5  article p{
+    color: var(--Darkfont-op70);
+}
+
+
+/* GRID AREA CONFIG */
+/* and pattern positioning ;) */
+.main-card {
+    background-color: var(--MainCard);
+    grid-area: Main-Card;
+    position: relative;
+}
+.main-card .quotation-pattern{
+    content: '';
+    display: inline-block;
+    background: url(../images/bg-pattern-quotation.svg) center center no-repeat;
+    height: 10.2rem;
+    width: 10.4rem;
+    position: absolute;
+    top: 0;
+    right: 8rem;
+}
+.card-2 {
+    background-color: var(--Card-2);
+    grid-area: Card-2;
+}
+.card-3 {
+    background-color: var(--Card-3-and-5);
+    grid-area: Card-3;
+}
+.card-4 {
+    background-color: var(--Card-4);
+    grid-area: Card-4;
+}
+.card-5 {
+    background-color: var(--Card-3-and-5);
+    grid-area: Card-5;
+}

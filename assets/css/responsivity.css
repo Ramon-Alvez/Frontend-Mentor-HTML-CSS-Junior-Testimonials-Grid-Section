@@ -1,0 +1,27 @@
+@media (max-width: 899px) {
+    .container{
+        grid-template-areas: 
+            "Main-Card Main-Card"
+            "Card-2 Card-3"
+            "Card-4 Card-4"
+            "Card-5 Card-5"
+        ;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        grid-template-areas: 
+            "Main-Card"
+            "Card-2"
+            "Card-3"
+            "Card-4"
+            "Card-5"
+        ;
+        grid-template-columns: 1fr;
+    }
+    .main-card .quotation-pattern{
+        right: 2rem;
+    }
+}
