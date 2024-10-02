@@ -36,7 +36,7 @@ I was really very proud of the result of this challenge, not only because of the
 
 ### Continued development 🚀
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My current goal is to finish all the FrontEnd Mentor challenges, to train and learn in the process. After finishing all HTML and CSS challenges, I will start JavaScript lessons.
 
 ## Author 🧙‍♂️
 
